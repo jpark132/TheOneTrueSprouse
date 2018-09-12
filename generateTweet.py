@@ -10,14 +10,14 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 # runs the main function from getTweets which sets up the dictionary
-getTweets.main()
+# getTweets.main()
 
 with open("dict.json", "r") as read_file:
 	dict = json.load(read_file)
 
 
 def getWordChain(lastWord, dict): ##generate function not producing anyuthing
-	pdb.set_trace()
+	# pdb.set_trace()
 	result = lastWord
 
 	while lastWord in dict:
